@@ -34,15 +34,16 @@ namespace RentaDeVehículos
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtnit = new System.Windows.Forms.TextBox();
+            this.txtplaca = new System.Windows.Forms.TextBox();
+            this.FAlquiler = new System.Windows.Forms.DateTimePicker();
+            this.FDevo = new System.Windows.Forms.DateTimePicker();
+            this.txtrecorrido = new System.Windows.Forms.TextBox();
+            this.buttonIngresar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,49 +93,50 @@ namespace RentaDeVehículos
             this.label5.TabIndex = 4;
             this.label5.Text = "kilómetros recorridos";
             // 
-            // textBox1
+            // txtnit
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtnit.Location = new System.Drawing.Point(173, 56);
+            this.txtnit.Name = "txtnit";
+            this.txtnit.Size = new System.Drawing.Size(66, 20);
+            this.txtnit.TabIndex = 5;
             // 
-            // textBox2
+            // txtplaca
             // 
-            this.textBox2.Location = new System.Drawing.Point(173, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtplaca.Location = new System.Drawing.Point(173, 101);
+            this.txtplaca.Name = "txtplaca";
+            this.txtplaca.Size = new System.Drawing.Size(77, 20);
+            this.txtplaca.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // FAlquiler
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(173, 134);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.FAlquiler.Location = new System.Drawing.Point(173, 134);
+            this.FAlquiler.Name = "FAlquiler";
+            this.FAlquiler.Size = new System.Drawing.Size(219, 20);
+            this.FAlquiler.TabIndex = 7;
             // 
-            // dateTimePicker2
+            // FDevo
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(173, 181);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePicker2.TabIndex = 8;
+            this.FDevo.Location = new System.Drawing.Point(173, 181);
+            this.FDevo.Name = "FDevo";
+            this.FDevo.Size = new System.Drawing.Size(213, 20);
+            this.FDevo.TabIndex = 8;
             // 
-            // textBox3
+            // txtrecorrido
             // 
-            this.textBox3.Location = new System.Drawing.Point(173, 219);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(77, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtrecorrido.Location = new System.Drawing.Point(173, 219);
+            this.txtrecorrido.Name = "txtrecorrido";
+            this.txtrecorrido.Size = new System.Drawing.Size(77, 20);
+            this.txtrecorrido.TabIndex = 9;
             // 
-            // button1
+            // buttonIngresar
             // 
-            this.button1.Location = new System.Drawing.Point(173, 270);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 22);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Ingresar Datos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonIngresar.Location = new System.Drawing.Point(173, 268);
+            this.buttonIngresar.Name = "buttonIngresar";
+            this.buttonIngresar.Size = new System.Drawing.Size(94, 22);
+            this.buttonIngresar.TabIndex = 10;
+            this.buttonIngresar.Text = "Ingresar Datos";
+            this.buttonIngresar.UseVisualStyleBackColor = true;
+            this.buttonIngresar.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -163,20 +165,29 @@ namespace RentaDeVehículos
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(404, 294);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 14;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonIngresar);
+            this.Controls.Add(this.txtrecorrido);
+            this.Controls.Add(this.FDevo);
+            this.Controls.Add(this.FAlquiler);
+            this.Controls.Add(this.txtplaca);
+            this.Controls.Add(this.txtnit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -184,6 +195,7 @@ namespace RentaDeVehículos
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Datos de Alquiler";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,14 +209,15 @@ namespace RentaDeVehículos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtnit;
+        private System.Windows.Forms.TextBox txtplaca;
+        private System.Windows.Forms.DateTimePicker FAlquiler;
+        private System.Windows.Forms.DateTimePicker FDevo;
+        private System.Windows.Forms.TextBox txtrecorrido;
+        private System.Windows.Forms.Button buttonIngresar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label7;
     }
 }

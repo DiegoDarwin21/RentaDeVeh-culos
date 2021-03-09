@@ -10,10 +10,10 @@ namespace RentaDeVehículos
     {
         string nombre;
         DateTime fdevo;
-        int pagar;
+        string totalPagar;
 
         public string Nombre { get => nombre; set => nombre = value; }
         public DateTime Fdevo { get => fdevo; set => fdevo = value; }
-        public int Pagar { get => pagar; set => pagar = value; }
+        public string TotalPagar { get => totalPagar; set => totalPagar = value; }
     }
 }
