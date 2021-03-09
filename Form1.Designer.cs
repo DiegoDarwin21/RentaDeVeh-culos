@@ -39,19 +39,19 @@ namespace RentaDeVehículos
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtnit = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtdirec = new System.Windows.Forms.TextBox();
+            this.txtplaca = new System.Windows.Forms.TextBox();
+            this.txtmarca = new System.Windows.Forms.TextBox();
+            this.txtmodelo = new System.Windows.Forms.TextBox();
+            this.txtcolor = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonMostrar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -149,61 +149,61 @@ namespace RentaDeVehículos
             this.label10.TabIndex = 9;
             this.label10.Text = "Vehículo";
             // 
-            // textBox1
+            // txtnit
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtnit.Location = new System.Drawing.Point(85, 77);
+            this.txtnit.Name = "txtnit";
+            this.txtnit.Size = new System.Drawing.Size(73, 20);
+            this.txtnit.TabIndex = 10;
             // 
-            // textBox2
+            // txtnombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtnombre.Location = new System.Drawing.Point(85, 110);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(164, 20);
+            this.txtnombre.TabIndex = 11;
             // 
-            // textBox3
+            // txtdirec
             // 
-            this.textBox3.Location = new System.Drawing.Point(85, 141);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(108, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtdirec.Location = new System.Drawing.Point(85, 141);
+            this.txtdirec.Name = "txtdirec";
+            this.txtdirec.Size = new System.Drawing.Size(108, 20);
+            this.txtdirec.TabIndex = 12;
             // 
-            // textBox4
+            // txtplaca
             // 
-            this.textBox4.Location = new System.Drawing.Point(541, 72);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(66, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtplaca.Location = new System.Drawing.Point(541, 72);
+            this.txtplaca.Name = "txtplaca";
+            this.txtplaca.Size = new System.Drawing.Size(66, 20);
+            this.txtplaca.TabIndex = 13;
             // 
-            // textBox5
+            // txtmarca
             // 
-            this.textBox5.Location = new System.Drawing.Point(541, 110);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 14;
+            this.txtmarca.Location = new System.Drawing.Point(541, 110);
+            this.txtmarca.Name = "txtmarca";
+            this.txtmarca.Size = new System.Drawing.Size(100, 20);
+            this.txtmarca.TabIndex = 14;
             // 
-            // textBox6
+            // txtmodelo
             // 
-            this.textBox6.Location = new System.Drawing.Point(541, 144);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(66, 20);
-            this.textBox6.TabIndex = 15;
+            this.txtmodelo.Location = new System.Drawing.Point(541, 144);
+            this.txtmodelo.Name = "txtmodelo";
+            this.txtmodelo.Size = new System.Drawing.Size(66, 20);
+            this.txtmodelo.TabIndex = 15;
             // 
-            // textBox7
+            // txtcolor
             // 
-            this.textBox7.Location = new System.Drawing.Point(541, 182);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(51, 20);
-            this.textBox7.TabIndex = 16;
+            this.txtcolor.Location = new System.Drawing.Point(541, 182);
+            this.txtcolor.Name = "txtcolor";
+            this.txtcolor.Size = new System.Drawing.Size(51, 20);
+            this.txtcolor.TabIndex = 16;
             // 
-            // textBox8
+            // txtprecio
             // 
-            this.textBox8.Location = new System.Drawing.Point(541, 225);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(66, 20);
-            this.textBox8.TabIndex = 17;
+            this.txtprecio.Location = new System.Drawing.Point(541, 225);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(66, 20);
+            this.txtprecio.TabIndex = 17;
             // 
             // button1
             // 
@@ -213,6 +213,7 @@ namespace RentaDeVehículos
             this.button1.TabIndex = 18;
             this.button1.Text = "Agregar Cliente";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -222,6 +223,7 @@ namespace RentaDeVehículos
             this.button2.TabIndex = 19;
             this.button2.Text = "Agregar Vehículo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -239,14 +241,15 @@ namespace RentaDeVehículos
             this.dataGridView2.Size = new System.Drawing.Size(308, 150);
             this.dataGridView2.TabIndex = 21;
             // 
-            // button3
+            // buttonMostrar
             // 
-            this.button3.Location = new System.Drawing.Point(297, 486);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 23);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Mostrar Datos";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonMostrar.Location = new System.Drawing.Point(297, 486);
+            this.buttonMostrar.Name = "buttonMostrar";
+            this.buttonMostrar.Size = new System.Drawing.Size(94, 23);
+            this.buttonMostrar.TabIndex = 22;
+            this.buttonMostrar.Text = "Mostrar Datos";
+            this.buttonMostrar.UseVisualStyleBackColor = true;
+            this.buttonMostrar.Click += new System.EventHandler(this.buttonMostrar_Click);
             // 
             // button4
             // 
@@ -264,19 +267,19 @@ namespace RentaDeVehículos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 515);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonMostrar);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtprecio);
+            this.Controls.Add(this.txtcolor);
+            this.Controls.Add(this.txtmodelo);
+            this.Controls.Add(this.txtmarca);
+            this.Controls.Add(this.txtplaca);
+            this.Controls.Add(this.txtdirec);
+            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.txtnit);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -309,19 +312,19 @@ namespace RentaDeVehículos
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtnit;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtdirec;
+        private System.Windows.Forms.TextBox txtplaca;
+        private System.Windows.Forms.TextBox txtmarca;
+        private System.Windows.Forms.TextBox txtmodelo;
+        private System.Windows.Forms.TextBox txtcolor;
+        private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonMostrar;
         private System.Windows.Forms.Button button4;
     }
 }
