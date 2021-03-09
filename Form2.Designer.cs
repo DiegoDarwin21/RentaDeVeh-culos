@@ -114,7 +114,7 @@ namespace RentaDeVehículos
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(173, 175);
+            this.dateTimePicker2.Location = new System.Drawing.Point(173, 181);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(213, 20);
             this.dateTimePicker2.TabIndex = 8;
