@@ -120,16 +120,27 @@ namespace RentaDeVehículos
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Vehiculo v = new Vehiculo();
-            v.Placa = txtplaca.Text;
-            v.Marca = txtmarca.Text;
-            v.Modelo = txtmodelo.Text;
-            v.Color = txtcolor.Text;
-            v.Precio = Convert.ToInt16(txtprecio.Text);
+            bool existe = listaVehiculos.Exists(c => c.Placa == txtplaca.Text);
+            if(existe== true)
+            {
+                MessageBox.Show("El dato ingresado ya existe en la lista", "Advertencia",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
-            listaVehiculos.Add(v);
+            
+            else
+            {
+                Vehiculo v = new Vehiculo();
+                v.Placa = txtplaca.Text;
+                v.Marca = txtmarca.Text;
+                v.Modelo = txtmodelo.Text;
+                v.Color = txtcolor.Text;
+                v.Precio = Convert.ToInt16(txtprecio.Text);
 
-            Guardar();
+                listaVehiculos.Add(v);
+
+                Guardar();
+            }
+      
         }
 
         private void buttonMostrar_Click(object sender, EventArgs e)
